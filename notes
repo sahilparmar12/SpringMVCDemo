@@ -1,0 +1,23 @@
+Part3: day6 (23/12/2022)
+
+This contains the setup for SPRING validations using Hibernet (v6.2) 
+This contains the information about 
+1. How to put validation on a variable
+2. How to use it in Controller using @Valid and @BindingResult annotations
+3. how to show result on the jsp page.
+4. use of @InitBinder
+
+part4:Day7 (24/12/2022)
+How to write coustom vallidation methods and how we can debug by printing the BindingResult object
+How to create custom validation annnotation
+	1. make a folder named resources under src folder.
+	2. in that folder make a file named message.prperties and in that file write the exception with the message to show
+		e.g. typeMismatch.customer.freePasses = Invalid number
+	3. now in the spring xml file mention the following things
+		<bean id="messageSource"
+	class="org.springframework.context.support.ResourceBundleMessageSource">
+	
+	<property name="basenames" value="resources/messages"></property>
+	
+How to make custom validation rules:
+	
